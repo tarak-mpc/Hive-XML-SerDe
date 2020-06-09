@@ -2,11 +2,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ibm.spss.hive.serde2.xml</groupId>
 	<artifactId>hivexmlserde</artifactId>
-	<version>1.0.5.3</version>
+	<version>1.0.5.4</version>
 	<packaging>jar</packaging>
 	<name>hive-xml-serde</name>
-	<url>https://github.com/dvasilen/Hive-XML-SerDe</url>
-	<description>XML SerDe for Apache Hive</description>
+	<description>XML SerDe for Apache Hive 3</description>
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0, January 2004</name>
@@ -23,9 +22,9 @@
 	</developers>
 	<scm>
 		<!-- Replace the connection below with your project connection -->
-		<connection>scm:git:git@github.com:dvasilen/Hive-XML-SerDe.git</connection>
-		<developerConnection>scm:git:git@github.com:dvasilen/Hive-XML-SerDe.git</developerConnection>
-		<url>scm:git:git@github.com:dvasilen/Hive-XML-SerDe.git</url>
+		<connection>scm:git:git@github.com:tarak-mpc/Hive-XML-SerDe.git</connection>
+		<developerConnection>scm:git:git@github.com:tarak-mpc/Hive-XML-SerDe.git</developerConnection>
+		<url>scm:git:git@github.com:tarak-mpc/Hive-XML-SerDe.git</url>
 		<tag>HEAD</tag>
 	</scm>
     <properties>
@@ -117,30 +116,30 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-serde</artifactId>
-			<version>1.2.0</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-exec</artifactId>
-			<version>1.2.0</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-mapreduce-client-core</artifactId>
-			<version>2.6.0</version>
+			<version>3.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-common</artifactId>
-			<version>2.6.0</version>
+			<version>3.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>

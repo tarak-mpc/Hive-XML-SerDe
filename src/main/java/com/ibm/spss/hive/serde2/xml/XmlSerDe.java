@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hive.serde2.SerDe;
+import org.apache.hadoop.hive.serde2.AbstractSerDe;
 import org.apache.hadoop.hive.serde2.SerDeException;
 import org.apache.hadoop.hive.serde2.SerDeStats;
 import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;
@@ -47,7 +47,7 @@ import com.ibm.spss.hive.serde2.xml.processor.java.JavaXmlProcessor;
 /**
  * The XML serializer/deserializer for Apache Hive
  */
-public class XmlSerDe implements SerDe {
+public class XmlSerDe extends AbstractSerDe {
 
     private static final Logger LOGGER = Logger.getLogger(XmlSerDe.class);
     private static final String XML_PROCESSOR_CLASS = "xml.processor.class";
